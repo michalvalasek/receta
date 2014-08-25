@@ -4,8 +4,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
-# Use mysql as the database for Active Record
-gem 'mysql2'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -43,6 +42,7 @@ gem 'bower-rails'
 gem "foreman"
 
 group :test, :development do
+  gem 'mysql2' # Use mysql as the database for Active Record
   gem "rspec"
   gem "rspec-rails", "~> 2.0"
   gem "factory_girl_rails", "~> 4.0"
@@ -52,6 +52,7 @@ group :test, :development do
 end
 
 group :production, :staging do
+  gem "pg" # Use postgresql as the database for Active Record
   gem "rails_12factor"
   gem "rails_stdout_logging"
   gem "rails_serve_static_assets"
