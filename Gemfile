@@ -39,7 +39,8 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'bower-rails'
-gem "foreman"
+gem 'foreman'
+gem 'angular-rails-templates'
 
 group :test, :development do
   gem 'mysql2' # Use mysql as the database for Active Record
